@@ -1,9 +1,11 @@
 const express = require('express');
+const sequelize = require('./utils/connectDB');
+
 
 const app = express();
 const port = 8080
 
-const indexRouter = require('./routes/index.js');
+const indexRouter = require('./controllers/index.js');
 
 app.use('/', indexRouter);
 
